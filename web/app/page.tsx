@@ -43,7 +43,7 @@ export default function Home() {
           <img 
             src="/images/alex-knight-2EJCSULRwC8-unsplash (1).webp" 
             alt="Cybersecurity background" 
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-50"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-primary-900/80 via-primary-800/80 to-cyber-900/80"></div>
         </div>
@@ -157,8 +157,8 @@ export default function Home() {
             <p className="text-xl mb-8 text-primary-100">
               Get a free security assessment and discover how we can protect your digital assets.
             </p>
-            <Link href="/contact" className="bg-white text-primary-600 hover:bg-gray-100 font-semibold py-4 px-8 rounded-lg transition-colors duration-200 inline-flex items-center">
-              Schedule Consultation <ArrowRight className="ml-2 h-5 w-5" />
+            <Link href="/contact" className="bg-white text-primary-600 hover:bg-gray-100 font-semibold py-4 px-8 rounded-lg transition-colors duration-200">
+              Contact Us
             </Link>
           </motion.div>
         </div>

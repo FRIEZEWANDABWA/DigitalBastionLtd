@@ -67,7 +67,7 @@ export default function Contact() {
           <img 
             src="/images/contact-us-communication-support-service-assistance-concept.webp" 
             alt="Contact us" 
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-60"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-primary-900/80 to-cyber-900/80"></div>
         </div>
@@ -217,7 +217,7 @@ export default function Contact() {
                 <Phone className="h-6 w-6 text-primary-600 mt-1" />
                 <div>
                   <h4 className="font-semibold">Phone</h4>
-                  <p className="text-gray-600 dark:text-gray-400">+1 (555) 123-4567</p>
+                  <p className="text-gray-600 dark:text-gray-400">+254718300236</p>
                 </div>
               </div>
 
@@ -226,8 +226,8 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold">Office</h4>
                   <p className="text-gray-600 dark:text-gray-400">
-                    123 Security Street<br />
-                    Cyber City, CC 12345
+                    104 Riverside Drive<br />
+                    Nairobi, Kenya
                   </p>
                 </div>
               </div>

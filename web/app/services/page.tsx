@@ -54,7 +54,7 @@ export default function Services() {
           <img 
             src="/images/network-operator-upgrading-script-combining-html-code-with-it-language.jpg" 
             alt="Network security" 
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-60"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-primary-900/80 to-cyber-900/80"></div>
         </div>
@@ -88,7 +88,6 @@ export default function Services() {
                   <service.icon className="h-12 w-12 text-primary-600 group-hover:text-cyber-600 transition-colors" />
                   <div className="ml-4">
                     <h3 className="text-xl font-semibold">{service.title}</h3>
-                    <p className="text-primary-600 font-medium">{service.price}</p>
                   </div>
                 </div>
                 

@@ -6,12 +6,12 @@ import { ExternalLink, Shield } from 'lucide-react'
 export default function Portfolio() {
   const projects = [
     {
-      title: 'Enterprise Network Security Overhaul',
-      client: 'Fortune 500 Financial Institution',
+      title: 'Kofisi Africa Access Control and Network Setup',
+      client: 'Kofisi Africa',
       image: '/images/pexels-designecologist-1779487.jpg',
-      description: 'Complete network security redesign including firewall implementation, intrusion detection systems, and employee training.',
-      results: ['99.9% uptime achieved', '50% reduction in security incidents', '100% compliance with regulations'],
-      category: 'Network Security',
+      description: 'Complete access control system implementation and secure network infrastructure setup for modern workspace solutions.',
+      results: ['Secure access control deployed', 'Network infrastructure optimized', 'Enhanced security protocols'],
+      category: 'Access Control & Networking',
       year: '2024'
     },
     {
@@ -48,7 +48,7 @@ export default function Portfolio() {
           <img 
             src="/images/pexels-tranmautritam-326502.jpg" 
             alt="Portfolio background" 
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-60"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-primary-900/80 to-cyber-900/80"></div>
         </div>

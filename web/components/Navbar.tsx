@@ -13,7 +13,6 @@ export default function Navbar() {
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
     { name: 'Portfolio', href: '/portfolio' },
-    { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
   ]
 
@@ -40,12 +39,7 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
-            <Link
-              href="/contact"
-              className="btn-primary"
-            >
-              Get Quote
-            </Link>
+
           </div>
 
           {/* Mobile menu button */}
@@ -80,13 +74,7 @@ export default function Navbar() {
                   {item.name}
                 </Link>
               ))}
-              <Link
-                href="/contact"
-                className="block w-full text-center btn-primary"
-                onClick={() => setIsOpen(false)}
-              >
-                Get Quote
-              </Link>
+
             </div>
           </motion.div>
         )}
