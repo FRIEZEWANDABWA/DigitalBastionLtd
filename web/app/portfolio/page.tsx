@@ -67,8 +67,16 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section className="bg-white dark:bg-gray-900 section-padding">
-        <div className="max-w-6xl mx-auto">
+      <section className="relative bg-white dark:bg-gray-900 section-padding overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/pexels-hsapir-1109896.jpg" 
+            alt="Portfolio stats background" 
+            className="w-full h-full object-cover opacity-70"
+          />
+          <div className="absolute inset-0 bg-white/85 dark:bg-gray-900/85"></div>
+        </div>
+        <div className="max-w-6xl mx-auto relative z-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <motion.div
@@ -90,8 +98,16 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section className="bg-gray-50 dark:bg-gray-800 section-padding">
-        <div className="max-w-7xl mx-auto">
+      <section className="relative bg-gray-50 dark:bg-gray-800 section-padding overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/pexels-picjumbo-com-55570-196644.jpg" 
+            alt="Projects background" 
+            className="w-full h-full object-cover opacity-70"
+          />
+          <div className="absolute inset-0 bg-gray-50/85 dark:bg-gray-800/85"></div>
+        </div>
+        <div className="max-w-7xl mx-auto relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

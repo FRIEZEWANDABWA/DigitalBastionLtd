@@ -73,8 +73,16 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="section-padding bg-white dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto">
+      <section className="relative section-padding bg-white dark:bg-gray-900 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/pexels-bohlemedia-963713.jpg" 
+            alt="Services grid background" 
+            className="w-full h-full object-cover opacity-70"
+          />
+          <div className="absolute inset-0 bg-white/85 dark:bg-gray-900/85"></div>
+        </div>
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <motion.div

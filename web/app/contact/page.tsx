@@ -85,8 +85,16 @@ export default function Contact() {
         </div>
       </section>
 
-      <section className="section-padding bg-white dark:bg-gray-900">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
+      <section className="relative section-padding bg-white dark:bg-gray-900 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/pexels-brett-sayles-4497197.jpg" 
+            alt="Contact form background" 
+            className="w-full h-full object-cover opacity-70"
+          />
+          <div className="absolute inset-0 bg-white/85 dark:bg-gray-900/85"></div>
+        </div>
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 relative z-10">
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
