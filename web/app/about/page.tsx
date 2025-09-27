@@ -49,25 +49,24 @@ export default function About() {
   ]
 
   return (
-    <div className=\"pt-16\">
-      {/* Hero Section */}
-      <section className=\"relative bg-gradient-to-br from-primary-900 to-cyber-900 text-white section-padding overflow-hidden\">
-        <div className=\"absolute inset-0 z-0\">
+    <div className="pt-16">
+      <section className="relative bg-gradient-to-br from-primary-900 to-cyber-900 text-white section-padding overflow-hidden">
+        <div className="absolute inset-0 z-0">
           <img 
-            src=\"/images/pexels-canvastudio-3194519.jpg\" 
-            alt=\"Team collaboration\" 
-            className=\"w-full h-full object-cover opacity-30\"
+            src="/images/pexels-canvastudio-3194519.jpg" 
+            alt="Team collaboration" 
+            className="w-full h-full object-cover opacity-30"
           />
-          <div className=\"absolute inset-0 bg-gradient-to-br from-primary-900/80 to-cyber-900/80\"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-primary-900/80 to-cyber-900/80"></div>
         </div>
-        <div className=\"max-w-4xl mx-auto text-center relative z-10\">
+        <div className="max-w-4xl mx-auto text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className=\"text-5xl font-bold mb-6\">About Digital Bastion</h1>
-            <p className=\"text-xl text-gray-300\">
+            <h1 className="text-5xl font-bold mb-6">About Digital Bastion</h1>
+            <p className="text-xl text-gray-300">
               Protecting businesses worldwide with innovative cybersecurity solutions 
               and unmatched expertise since 2014.
             </p>
@@ -75,29 +74,28 @@ export default function About() {
         </div>
       </section>
 
-      {/* Mission Section */}
-      <section className=\"section-padding bg-white dark:bg-gray-900\">
-        <div className=\"max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center\">
+      <section className="section-padding bg-white dark:bg-gray-900">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className=\"text-4xl font-bold mb-6\">Our Mission</h2>
-            <p className=\"text-lg text-gray-600 dark:text-gray-400 mb-6\">
+            <h2 className="text-4xl font-bold mb-6">Our Mission</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
               To empower businesses with robust cybersecurity solutions that protect 
               their digital assets, ensure compliance, and enable secure growth in 
               an increasingly connected world.
             </p>
-            <div className=\"space-y-4\">
+            <div className="space-y-4">
               {[
                 'Comprehensive security assessments',
                 'Proactive threat monitoring',
                 'Regulatory compliance support',
                 'Employee security training'
               ].map((item, index) => (
-                <div key={index} className=\"flex items-center\">
-                  <CheckCircle className=\"h-5 w-5 text-green-500 mr-3\" />
+                <div key={index} className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
                   <span>{item}</span>
                 </div>
               ))}
@@ -110,79 +108,77 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <img 
-              src=\"/images/pexels-mart-production-7252563.jpg\" 
-              alt=\"Cybersecurity team\" 
-              className=\"rounded-lg shadow-xl\"
+              src="/images/pexels-mart-production-7252563.jpg" 
+              alt="Cybersecurity team" 
+              className="rounded-lg shadow-xl"
             />
           </motion.div>
         </div>
       </section>
 
-      {/* Values Section */}
-      <section className=\"bg-gray-50 dark:bg-gray-800 section-padding\">
-        <div className=\"max-w-6xl mx-auto\">
+      <section className="bg-gray-50 dark:bg-gray-800 section-padding">
+        <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className=\"text-center mb-16\"
+            className="text-center mb-16"
           >
-            <h2 className=\"text-4xl font-bold mb-4\">Our Values</h2>
-            <p className=\"text-xl text-gray-600 dark:text-gray-400\">
+            <h2 className="text-4xl font-bold mb-4">Our Values</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400">
               The principles that guide everything we do
             </p>
           </motion.div>
 
-          <div className=\"grid md:grid-cols-2 lg:grid-cols-4 gap-8\">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className=\"card text-center\"
+                className="card text-center"
               >
-                <value.icon className=\"h-12 w-12 text-primary-600 mx-auto mb-4\" />
-                <h3 className=\"text-xl font-semibold mb-3\">{value.title}</h3>
-                <p className=\"text-gray-600 dark:text-gray-400\">{value.description}</p>
+                <value.icon className="h-12 w-12 text-primary-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
+                <p className="text-gray-600 dark:text-gray-400">{value.description}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className=\"section-padding bg-white dark:bg-gray-900\">
-        <div className=\"max-w-6xl mx-auto\">
+      <section className="section-padding bg-white dark:bg-gray-900">
+        <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className=\"text-center mb-16\"
+            className="text-center mb-16"
           >
-            <h2 className=\"text-4xl font-bold mb-4\">Meet Our Team</h2>
-            <p className=\"text-xl text-gray-600 dark:text-gray-400\">
+            <h2 className="text-4xl font-bold mb-4">Meet Our Team</h2>
+            <p className="text-xl text-gray-600 dark:text-gray-400">
               Cybersecurity experts dedicated to protecting your business
             </p>
           </motion.div>
 
-          <div className=\"grid md:grid-cols-3 gap-8\">
+          <div className="grid md:grid-cols-3 gap-8">
             {team.map((member, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className=\"card text-center\"
+                className="card text-center"
               >
                 <img 
                   src={member.image} 
                   alt={member.name}
-                  className=\"w-32 h-32 rounded-full mx-auto mb-4 object-cover\"
+                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
                 />
-                <h3 className=\"text-xl font-semibold mb-2\">{member.name}</h3>
-                <p className=\"text-primary-600 font-medium mb-3\">{member.role}</p>
-                <p className=\"text-gray-600 dark:text-gray-400 text-sm\">{member.bio}</p>
+                <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
+                <p className="text-primary-600 font-medium mb-3">{member.role}</p>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">{member.bio}</p>
               </motion.div>
             ))}
           </div>
