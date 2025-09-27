@@ -38,8 +38,16 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-900 via-primary-800 to-cyber-900 text-white section-padding min-h-screen flex items-center">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+      <section className="relative bg-gradient-to-br from-primary-900 via-primary-800 to-cyber-900 text-white section-padding min-h-screen flex items-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/alex-knight-2EJCSULRwC8-unsplash (1).webp" 
+            alt="Cybersecurity background" 
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary-900/80 via-primary-800/80 to-cyber-900/80"></div>
+        </div>
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}

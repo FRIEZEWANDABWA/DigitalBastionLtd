@@ -49,8 +49,16 @@ export default function Services() {
 
   return (
     <div className="pt-16">
-      <section className="bg-gradient-to-br from-primary-900 to-cyber-900 text-white section-padding">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative bg-gradient-to-br from-primary-900 to-cyber-900 text-white section-padding overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/network-operator-upgrading-script-combining-html-code-with-it-language.jpg" 
+            alt="Network security" 
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary-900/80 to-cyber-900/80"></div>
+        </div>
+        <div className="max-w-4xl mx-auto text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
