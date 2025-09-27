@@ -91,8 +91,16 @@ export default function RiskManagement() {
         </div>
       </section>
 
-      <section className="section-padding bg-white dark:bg-gray-900">
-        <div className="max-w-6xl mx-auto">
+      <section className="relative section-padding bg-white dark:bg-gray-900 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/pexels-pixabay-373543 (1).jpg" 
+            alt="Risk management background" 
+            className="w-full h-full object-cover opacity-70"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-yellow-50/90 via-amber-50/90 to-orange-50/90 dark:from-gray-900/90 dark:via-yellow-900/90 dark:to-amber-900/90"></div>
+        </div>
+        <div className="max-w-6xl mx-auto relative z-10">
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <motion.div
@@ -100,8 +108,15 @@ export default function RiskManagement() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="card hover:shadow-xl transition-all duration-300"
+                className="card hover:shadow-xl transition-all duration-300 relative overflow-hidden"
               >
+                <div className="absolute top-0 right-0 w-24 h-24 opacity-30">
+                  <img 
+                    src={`/images/pexels-${index % 4 === 0 ? 'tranmautritam-326502' : index % 4 === 1 ? 'picjumbo-com-55570-196644' : index % 4 === 2 ? 'followalice-667200' : 'pixabay-60504'}.jpg`}
+                    alt={service.title}
+                    className="w-full h-full object-cover rounded-bl-2xl"
+                  />
+                </div>
                 <div className="flex items-center mb-4">
                   <service.icon className="h-12 w-12 text-primary-600 mr-4" />
                   <h3 className="text-xl font-semibold">{service.title}</h3>
@@ -125,8 +140,16 @@ export default function RiskManagement() {
         </div>
       </section>
 
-      <section className="bg-gray-50 dark:bg-gray-800 section-padding">
-        <div className="max-w-6xl mx-auto">
+      <section className="relative bg-gray-50 dark:bg-gray-800 section-padding overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/pexels-canvastudio-3194519.jpg" 
+            alt="Risk dimensions background" 
+            className="w-full h-full object-cover opacity-60"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/90 via-teal-50/90 to-cyan-50/90 dark:from-gray-800/90 dark:via-emerald-800/90 dark:to-teal-800/90"></div>
+        </div>
+        <div className="max-w-6xl mx-auto relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -82,8 +82,16 @@ export default function NetworkServices() {
         </div>
       </section>
 
-      <section className="section-padding bg-white dark:bg-gray-900">
-        <div className="max-w-6xl mx-auto">
+      <section className="relative section-padding bg-white dark:bg-gray-900 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/pexels-brett-sayles-4497197.jpg" 
+            alt="Network services background" 
+            className="w-full h-full object-cover opacity-70"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-orange-50/90 via-red-50/90 to-pink-50/90 dark:from-gray-900/90 dark:via-orange-900/90 dark:to-red-900/90"></div>
+        </div>
+        <div className="max-w-6xl mx-auto relative z-10">
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <motion.div
@@ -91,8 +99,15 @@ export default function NetworkServices() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="card hover:shadow-xl transition-all duration-300"
+                className="card hover:shadow-xl transition-all duration-300 relative overflow-hidden"
               >
+                <div className="absolute top-0 right-0 w-24 h-24 opacity-30">
+                  <img 
+                    src={`/images/pexels-${index % 4 === 0 ? 'clement-proust-363898785-29283877' : index % 4 === 1 ? 'margarita-141441249-28603903' : index % 4 === 2 ? 'soc-nang-d-ng-2150345854-32760474' : 'hsapir-1109896'}.jpg`}
+                    alt={service.title}
+                    className="w-full h-full object-cover rounded-bl-2xl"
+                  />
+                </div>
                 <div className="flex items-center mb-4">
                   <service.icon className="h-12 w-12 text-primary-600 mr-4" />
                   <h3 className="text-xl font-semibold">{service.title}</h3>

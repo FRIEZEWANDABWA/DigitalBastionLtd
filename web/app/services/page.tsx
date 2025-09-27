@@ -76,7 +76,7 @@ export default function Services() {
             alt="Services background" 
             className="w-full h-full object-cover opacity-70"
           />
-          <div className="absolute inset-0 bg-white/85 dark:bg-gray-900/85"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-white/85 via-blue-50/85 to-purple-50/85 dark:from-gray-900/85 dark:via-blue-900/85 dark:to-purple-900/85"></div>
         </div>
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -86,15 +86,16 @@ export default function Services() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="card hover:shadow-xl transition-all duration-300 group"
+                className="card hover:shadow-xl transition-all duration-300 group relative overflow-hidden"
               >
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-50/20 via-purple-50/20 to-pink-50/20 dark:from-blue-900/20 dark:via-purple-900/20 dark:to-pink-900/20"></div>
                 <div className="relative overflow-hidden rounded-lg mb-6">
                   <img 
                     src={category.image} 
                     alt={category.title}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                   <div className="absolute bottom-4 left-4">
                     <category.icon className="h-8 w-8 text-white" />
                   </div>

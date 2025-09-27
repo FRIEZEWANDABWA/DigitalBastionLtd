@@ -82,8 +82,16 @@ export default function AccessControl() {
         </div>
       </section>
 
-      <section className="section-padding bg-white dark:bg-gray-900">
-        <div className="max-w-6xl mx-auto">
+      <section className="relative section-padding bg-white dark:bg-gray-900 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/pexels-divinetechygirl-1181354.webp" 
+            alt="Access control background" 
+            className="w-full h-full object-cover opacity-70"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-50/90 via-indigo-50/90 to-blue-50/90 dark:from-gray-900/90 dark:via-purple-900/90 dark:to-indigo-900/90"></div>
+        </div>
+        <div className="max-w-6xl mx-auto relative z-10">
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <motion.div
@@ -91,8 +99,15 @@ export default function AccessControl() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="card hover:shadow-xl transition-all duration-300"
+                className="card hover:shadow-xl transition-all duration-300 relative overflow-hidden"
               >
+                <div className="absolute top-0 right-0 w-24 h-24 opacity-30">
+                  <img 
+                    src={`/images/${index % 4 === 0 ? 'alex-knight-2EJCSULRwC8-unsplash (2).webp' : index % 4 === 1 ? '3 (1).webp' : index % 4 === 2 ? 'christopher-gower-m_HRfLhgABo-unsplash (1).webp' : 'contact-us-communication-support-service-assistance-concept.webp'}`}
+                    alt={service.title}
+                    className="w-full h-full object-cover rounded-bl-2xl"
+                  />
+                </div>
                 <div className="flex items-center mb-4">
                   <service.icon className="h-12 w-12 text-primary-600 mr-4" />
                   <h3 className="text-xl font-semibold">{service.title}</h3>
