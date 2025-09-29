@@ -33,6 +33,15 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="text-center mb-8">
+          <a href="/dashboard" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold mr-4">
+            🎯 View Dashboard
+          </a>
+          <a href="/docs" className="bg-slate-600 hover:bg-slate-700 text-white px-6 py-3 rounded-lg font-semibold">
+            📚 API Docs
+          </a>
+        </div>
+
         <div className="text-center text-slate-400">
           <p><strong>Digital Bastion Ltd</strong> - Advanced Cybersecurity Solutions</p>
           <p>Built with Jac Language + Python FastAPI</p>
